@@ -1,1 +1,31 @@
-Git Docs
+
+Basic Commands
+git init: Initializes a new Git repository.
+git clone <repository>: Creates a copy of an existing repository.
+git add <file>: Stages a file for commit.
+git commit -m "message": Commits the staged changes with a message.
+git status: Shows the status of changes in the working directory.
+git log: Shows the commit history.
+Branching and Merging
+git branch: Lists all branches or creates a new branch if given a name.
+git checkout <branch>: Switches to a specified branch.
+git checkout -b <branch>: Creates and switches to a new branch.
+git merge <branch>: Merges the specified branch into the current branch.
+git rebase <branch>: Reapplies commits on top of another base branch.
+Remote Repositories
+git remote -v: Lists the remote repositories associated with the local repository.
+git fetch <remote>: Fetches updates from a remote repository but doesn’t merge them.
+git pull <remote> <branch>: Fetches and merges changes from the remote branch into your current branch.
+git push <remote> <branch>: Pushes your changes to the remote repository.
+Undoing Changes
+git reset <file>: Unstages a file but keeps changes in the working directory.
+git reset --hard: Resets the working directory and index to match the latest commit, discarding all changes.
+git revert <commit>: Creates a new commit that undoes changes from a specified commit.
+git stash: Temporarily saves changes that are not ready to be committed.
+Viewing Changes
+git diff: Shows the differences between the working directory and the index or between commits.
+git show <commit>: Shows information about a specific commit.
+Configuration and Help
+git config --global user.name "Your Name": Sets the global username for commits.
+git config --global user.email "your.email@example.com": Sets the global email for commits.
+git help <command>: Displays help information about a specific Git command.
